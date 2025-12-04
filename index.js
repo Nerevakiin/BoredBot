@@ -6,6 +6,7 @@ genActivityBtn.addEventListener("click", ()=>{
   .then(data => {
     console.log(data)
     document.getElementById('generated-activity').innerHTML = `
-    <p> Generated activity: ` + data.activity
+      <p> Generated activity: ` + data.activity
     })
+    document.body.classList.add("fun")
 })
